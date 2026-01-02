@@ -30,9 +30,9 @@
     </div>
   </header>
 
-  <!-- Page layout -->
+
   <main class="wrap layout">
-    <!-- Left sidebar -->
+  
     <aside class="sidebar">
       <img class="avatar" src="files/photo.jpg" alt="Portrait photo" />
 
@@ -51,21 +51,11 @@
       </div>
 
       <div class="links">
-        <a class="link" href="mailto:ekaracam@fsu.edu">
-          <i class="fa-solid fa-envelope"></i> <span>Email</span>
-        </a>
-        <a class="link" href="https://github.com/eckrcm" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-github"></i> <span>GitHub</span>
-        </a>
-        <a class="link" href="https://scholar.google.com/citations?user=YnfB-qwAAAAJ&hl=en" target="_blank" rel="noreferrer">
-          <i class="fa-solid fa-graduation-cap"></i> <span>Google Scholar</span>
-        </a>
-        <a class="link" href="https://www.linkedin.com/in/ece-karacam" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
-        </a>
-        <a class="link" href="https://orcid.org/" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-orcid"></i> <span>ORCID</span>
-        </a>
+        <a class="link" href="mailto:ekaracam@fsu.edu"> <i class="fa-solid fa-envelope"></i> <span>Email</span> </a>
+        <a class="link" href="https://github.com/eckrcm" target="_blank" rel="noreferrer"> <i class="fa-brands fa-github"></i> <span>GitHub</span></a>
+        <a class="link" href="https://scholar.google.com/citations?user=YnfB-qwAAAAJ&hl=en" target="_blank" rel="noreferrer"> <i class="fa-solid fa-graduation-cap"></i> <span>Google Scholar</span></a>
+        <a class="link" href="https://www.linkedin.com/in/ece-karacam" target="_blank" rel="noreferrer"> <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
+        <a class="link" href="https://orcid.org/0009-0003-0230-4112" target="_blank" rel="noreferrer"> <i class="fa-brands fa-orcid"></i> <span>ORCID</span></a>
       </div>
     </aside>
 
@@ -116,7 +106,13 @@
   </main>
 
   <footer class="wrap footer">
-    <span>Last updated: Dec 2025</span>
+      <span id="last-updated"></span>
   </footer>
+  <script>
+    const options = { year: 'numeric', month: 'short' };
+    const today = new Date();
+    document.getElementById('last-updated').textContent =
+      'Last updated: ' + today.toLocaleDateString(undefined, options);
+  </script>
 </body>
 </html>

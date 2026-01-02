@@ -59,6 +59,7 @@
         <a class="link" href="https://www.linkedin.com/in/ece-karacam" target="_blank">
           <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
         </a>
+        <a class="link" href="https://orcid.org/0009-0003-0230-4112" target="_blank" rel="noreferrer"> <i class="fa-brands fa-orcid"></i> <span>ORCID</span></a>
       </div>
     </aside>
 
@@ -80,8 +81,14 @@
     </section>
   </main>
 
-  <footer class="wrap footer">
-    <span>Last updated: Dec 2025</span>
-  </footer>
+ <footer class="wrap footer">
+  <span id="last-updated"></span>
+</footer>
+<script>
+  const options = { year: 'numeric', month: 'short' };
+  const today = new Date();
+  document.getElementById('last-updated').textContent =
+    'Last updated: ' + today.toLocaleDateString(undefined, options);
+</script>
 </body>
 </html>

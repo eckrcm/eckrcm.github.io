@@ -60,7 +60,7 @@
         <a class="link" href="https://www.linkedin.com/in/ece-karacam" target="_blank" rel="noreferrer">
           <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
         </a>
-        <a class="link" href="https://orcid.org/" target="_blank" rel="noreferrer">
+        <a class="link" href="https://orcid.org/0009-0003-0230-4112" target="_blank" rel="noreferrer">
           <i class="fa-brands fa-orcid"></i> <span>ORCID</span>
         </a>
       </div>
@@ -72,16 +72,42 @@
 
       <div class="entry">
         <a class="entry-title" href="files/Poster1.pdf" target="_blank" rel="noreferrer">Principal Observable Analysis</a>
-        <div class="entry-date">Nov 23, 2025</div>
+        <div class="entry-date">Nov 22-24, 2025</div>
         <div class="entry-meta">Poster Presentation, <a href="https://zhengchao-wan.com/tda-conference-2025/index.html" target="_blank" rel="noreferrer">Topological Data Analysis Conference 2025,  </a> University of Missouri</div>
       </div>
 
+      <h3 class="section-title">Upcoming</h3>
+      <div class="entry">
+        <div class="entry-date">Jan 23-24, 2026</div>
+        <div class="entry-meta">
+          Talk, <a href= "https://people.clas.ufl.edu/hwagner/fsu_uf_tg_26/" target="_blank" rel="noreferrer"> FSU/UF Topology and Geometry Meeting, </a> University of Florida, Gainesville, FL
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Mar 28–29, 2026</div>
+        <div class="entry-meta">
+          Invited Talk, Special session on <em>Geometric Methods for Data Science</em> at the
+          <a href="https://meetings.ams.org/math/spring2026se/meetingapp.cgi/Home/0" target="_blank" rel="noreferrer">
+            2026 Spring Southeastern Sectional Meeting of AMS,
+          </a>
+          Georgia Southern University, Savannah, GA
+        </div>
+      </div>
+
+    
 
     </section>
   </main>
 
-  <footer class="wrap footer">
-    <span>Last updated: Dec 2025</span>
-  </footer>
+   <footer class="wrap footer">
+  <span id="last-updated"></span>
+</footer>
+<script>
+  const options = { year: 'numeric', month: 'short' };
+  const today = new Date();
+  document.getElementById('last-updated').textContent =
+    'Last updated: ' + today.toLocaleDateString(undefined, options);
+</script>
 </body>
 </html>
