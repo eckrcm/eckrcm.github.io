@@ -270,3 +270,9 @@ a:hover{
   border-bottom: 2px solid var(--link);
 }
 
+.talks-page .talk-title {
+  color: #3f3f46;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 800;
+}
